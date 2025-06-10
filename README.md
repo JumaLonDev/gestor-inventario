@@ -26,9 +26,9 @@ Desarrollar una aplicación web que permita gestionar productos, entradas/salida
 ### Semana 1 (inicio: 10/06/2025)
 - [x] Crear proyecto base en Laravel
 - [x] Subirlo a GitHub
-- [ ] Crear modelo Producto y su migración
-- [ ] Crear base de datos local y conexión en `.env`
-- [ ] Crear README.md con visión del proyecto
+- [x] Crear modelo Producto y su migración
+- [x] Crear base de datos local y conexión en `.env`
+- [x] Crear README.md con visión del proyecto
 
 ### Semana 2
 - [ ] CRUD completo de productos
