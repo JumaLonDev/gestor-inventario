@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Providers\RouteServiceProvider;
+use App\Repositories\ProductoRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->register(RouteServiceProvider::class);
+        $this->app->register(RouteServiceProvider::class, function ($app) {
+            return new ProductoRepository();
+        });
     }
 
     /**

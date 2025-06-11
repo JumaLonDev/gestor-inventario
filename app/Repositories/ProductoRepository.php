@@ -23,13 +23,24 @@ class ProductoRepository
 
   public function update($id, array $data)
   {
-    $producto = Producto::findOrFail($id);
+    $producto = Producto::find($id);
+
+    if (!$producto) {
+      return null;
+    }
+    
     $producto->update($data);
     return $producto;
   }
 
   public function delete($id)
   {
-    return Producto::destroy($id);
+    $producto = Producto::find($id);
+
+    if (!$producto) {
+      return null;
+    }
+
+    return $producto->delete();
   }
 }

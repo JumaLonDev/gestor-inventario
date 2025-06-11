@@ -1,4 +1,4 @@
-# 🧠 Gestor de Inventarios - JJEAR Technologies
+# 🧠 Gestor de Inventarios
 
 **Proyecto personal desarrollado por Juan Manuel.**  
 Este sistema está orientado a pequeñas empresas que desean llevar un control eficiente de su inventario y facilitar la gestión de pedidos.
